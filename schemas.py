@@ -1,4 +1,4 @@
-from marshmallow import Schema, fields
+﻿from marshmallow import Schema, fields
 
 class StoreSchema(Schema):
     id = fields.Str(dump_only=True)
@@ -13,3 +13,8 @@ class ProductSchema(Schema):
 class ProductUpdateSchema(Schema):
     name = fields.Str()
     price = fields.Float()
+
+class UserSchema(Schema):
+    id = fields.Str(dump_only=True)
+    username = fields.Str(required=True)
+    password = fields.Str(required=True, load_only=True)

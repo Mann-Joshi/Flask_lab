@@ -1,3 +1,5 @@
-Flask
+﻿Flask
 flask-smorest
 marshmallow
+flask-jwt-extended
+passlib

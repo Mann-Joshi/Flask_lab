@@ -1,2 +1,3 @@
-stores = {}
+﻿stores = {}
 products = {}
+users = {}
